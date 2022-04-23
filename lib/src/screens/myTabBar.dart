@@ -1,7 +1,5 @@
-import 'package:appbar_widgets/src/widgets/orientation_builder_widget.dart';
-import 'package:flutter/material.dart';
 import 'package:appbar_widgets/src/util/az_material_colors.dart';
-import 'package:appbar_widgets/src/widgets/drawer_widget.dart';
+import 'package:flutter/material.dart';
 
 ///  https://www.youtube.com/watch?v=TlbbIQykHK0
 ///
@@ -25,7 +23,6 @@ class _MyTabBarState extends State<MyTabBar> {
   MaterialApp buildMaterialApp3() => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'AppSliverBar Widgets',
-        // The Mandy red, light theme.
         theme: ThemeData(
           colorSchemeSeed: blueMaterialColor,
           useMaterial3: true,
@@ -72,11 +69,12 @@ class _MyTabBarState extends State<MyTabBar> {
       );
 
   Center getText(String title) => Center(
-          child: Text(
-        title,
-        style: const TextStyle(
-          color: Colors.white,
-          fontSize: 25,
+        child: Text(
+          title,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 25,
+          ),
         ),
-      ));
+      );
 }

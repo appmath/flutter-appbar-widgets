@@ -3,7 +3,9 @@ import 'package:appbar_widgets/src/widgets/drawer_widget.dart';
 import 'package:appbar_widgets/src/util/az_material_colors.dart';
 
 ///  https://www.youtube.com/watch?v=TlbbIQykHK0
-class TransparentAppBar extends StatelessWidget {
+///
+/// Transparent appBar
+class MyTransparentAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return buildMaterialApp3();
@@ -13,7 +15,6 @@ class TransparentAppBar extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
       title: 'Appbar Widgets',
-      // The Mandy red, light theme.
       theme: ThemeData(
         colorSchemeSeed: blueMaterialColor,
         useMaterial3: true,
@@ -40,13 +41,4 @@ class TransparentAppBar extends StatelessWidget {
       ),
     );
   }
-
-  Center getText(String title) => Center(
-          child: Text(
-        title,
-        style: const TextStyle(
-          color: Colors.white,
-          fontSize: 25,
-        ),
-      ));
 }

@@ -6,7 +6,7 @@ import 'package:appbar_widgets/src/screens/mySearchBar.dart';
 import 'package:appbar_widgets/src/screens/myTabBar.dart';
 import 'package:appbar_widgets/src/screens/myWillPopScope.dart';
 import 'package:appbar_widgets/src/screens/myAppBar.dart';
-import 'package:appbar_widgets/src/screens/transparentAppBar.dart';
+import 'package:appbar_widgets/src/screens/myTransparentAppBar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +17,6 @@ void main() {
   // runApp(MyTabBar());
   // runApp(MyPopupMenuButton());
   // runApp(MyWillPopScope());
-  runApp(MyAppBar());
-  // runApp(TransparentAppBar());
+  // runApp(MyAppBar());
+  runApp(MyTransparentAppBar());
 }
